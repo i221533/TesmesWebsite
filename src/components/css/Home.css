@@ -1,0 +1,193 @@
+
+.Home-section{
+
+
+  width:100%;
+  height:auto;
+}
+
+.main-div{
+  width:100%;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+  display:flex;
+    background-image: url('./img/slide/slide-2.png');
+    background-size: cover; /* Ensure the whole image is visible */
+  background-position: center; /* Center the image */
+  margin-bottom:100px;
+}
+.col-lg-6 h4{
+
+size:5rem;
+}
+@media all and  (max-width: 768px) {
+  .main-div{
+
+    width:100%;
+    height: 1000px;
+   
+  }
+ 
+}
+
+.content{
+
+
+  width:700px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top:3px solid red;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display:block;
+  margin-top:350px;
+  margin-bottom:0px;
+}
+.content h1{
+size:1rem;
+font-family: 'Courier New', Courier, monospace;
+}
+ .content .btn{
+  
+  background-color: none;
+  margin-bottom: 30px;
+  width:130px;
+  color:white;
+  font-size: 1rem;
+  border-radius:10px;
+  border:2px solid chocolate;
+  transition: background-color 0.5s ease;
+ 
+
+}
+ .content .btn:hover{
+
+background-color: chocolate;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.content.slide-up {
+  animation: slideIn 1s ease;
+}
+
+
+
+.container{
+ width:100%;
+ height:auto;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+
+}
+
+
+.row .col-lg-6 p{
+
+  font-size: 1rem;
+}
+.row .col-lg-6 img{
+
+  height: 400px;
+  width:450px;
+}
+@media all and  (max-width: 768px) {
+.row .col-lg-6{
+
+  margin-bottom: 100px;;
+}
+
+}
+.button-div{
+
+  color:white;
+}
+.button-div .btn{
+  border:2px solid  color black;
+  border-radius: 5px;
+  width:180px;
+  background-color: chocolate;
+  transition: background color 0.3s;
+}
+.button-div .btn:hover{
+
+  background-color: darkgreen;
+}
+
+.col-lg-6 .third-image{
+
+  border-right: 6px solid red;
+  border-top: 6px solid red;
+}
+
+.container .last-container{
+
+  margin-bottom: 30px;
+}
+
+.logo-showing{
+
+  width:100%;
+ height:auto;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+.logo-showing .container{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+
+}
+.logo-showing .container .col-lg-3{
+
+  justify-content: center;
+  align-items: center;
+  display:block;
+  height: auto;
+  width:200px;
+
+}
+
+.logo-showing .container .col-lg-3 img{
+  
+  height: 100px;
+  
+}
+.logo-showing .container .image-div{
+  margin-top:100px;
+
+  width: 180px;
+  height: 180px; /* Set the height to match the width to create a perfect circle */
+  border-radius: 50%; /* Make it a circle by setting the border radius to 50% */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Optional background color for the circle */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+
+}
+.logo-showing .container .image-div:hover{
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo-showing .container .col-lg-3 .heading{
+
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  margin-bottom:100px;
+  size: 0.2em;
+  
+}
+
