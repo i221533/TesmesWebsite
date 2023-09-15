@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TesmesWebsite/static/css/main.594aa09a.css",
+    "main.js": "/TesmesWebsite/static/js/main.838a020b.js",
+    "static/js/787.b24003d1.chunk.js": "/TesmesWebsite/static/js/787.b24003d1.chunk.js",
+    "static/media/review2.png": "/TesmesWebsite/static/media/review2.87b496b082523cf3e581.png",
+    "static/media/review1.png": "/TesmesWebsite/static/media/review1.8bcc2e26db5768855192.png",
+    "static/media/1.png": "/TesmesWebsite/static/media/1.a7b5584dd9c967d3d867.png",
+    "static/media/slide-2.png": "/TesmesWebsite/static/media/slide-2.ddab57cd6de8731e815e.png",
+    "static/media/startup.png": "/TesmesWebsite/static/media/startup.e705a998a3749064f4e3.png",
+    "static/media/logo.png": "/TesmesWebsite/static/media/logo.df1a4344c0fc4c1f9f12.png",
+    "index.html": "/TesmesWebsite/index.html",
+    "main.594aa09a.css.map": "/TesmesWebsite/static/css/main.594aa09a.css.map",
+    "main.838a020b.js.map": "/TesmesWebsite/static/js/main.838a020b.js.map",
+    "787.b24003d1.chunk.js.map": "/TesmesWebsite/static/js/787.b24003d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.594aa09a.css",
+    "static/js/main.838a020b.js"
+  ]
+}
