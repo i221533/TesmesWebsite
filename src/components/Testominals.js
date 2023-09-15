@@ -5,8 +5,12 @@ import styled from 'styled-components';
 import pic1 from './css/img/testimonials/1.png'
 import pic2 from './css/img/testimonials/review1.png'
 import pic3 from './css/img/testimonials/review2.png'
+import {motion,useAnimation} from 'framer-motion';
 const Testominals=()=>{
-
+  const animationVariants = {
+    hidden: { y: '100%' }, // Initially hidden below the viewport
+  visible: { y: 0, transition: { duration: 1 } }, // Moves to y: 0 with a 1-second transition
+  };
 
 const Wrapper=styled.section`
 
@@ -87,7 +91,12 @@ border-radius:50%;
       
        {/* <div className='lower-hr'> <hr/></div> */}
       <div className='container'>
-      <div className='row'>
+      <motion.div 
+initial="hidden"
+      animate="visible"
+      variants={animationVariants}
+
+      className='row'>
       <div className='col-lg-4 col-sm-6 custom-class'>
       <div className="test-text">
        <p> Awesome Service! <br/>
@@ -114,7 +123,7 @@ border-radius:50%;
                  Their services are amazing!.</p></div>
                  <div className="Test-Image1"> <img src={pic3} alt=""/> </div>
                  </div> 
-       </div> </div>
+       </motion.div> </div>
       
       
       </div>

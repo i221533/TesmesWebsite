@@ -16,6 +16,7 @@ import {motion,useAnimation} from 'framer-motion';
 
 const Home=()=>{
   const [scrollY, setScrollY] = useState(0);
+  const [prevScrollY, setPrevScrollY] = useState(0);
   const controls = useAnimation();
 
   const handleScroll = () => {
@@ -24,11 +25,13 @@ const Home=()=>{
 
   useEffect(() => {
     // Update animation based on scroll position
-    controls.start({
-      x: scrollY > 100 ? 0 : '100%',
-    });
-  }, [scrollY, controls]);
-
+    if (scrollY > prevScrollY) {
+      controls.start({
+        x: scrollY > 100 ? 0 : '100%',
+      });
+    }
+    setPrevScrollY(scrollY);
+  }, [scrollY, prevScrollY, controls]);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -65,7 +68,7 @@ const animationVariants = {
        initial="hidden"
       animate="visible"
       variants={animationVariants}
-      // style={{ transform: `translateX(${scrollY}px)` }}
+       style={{ transform: `translateX(${scrollY}px)` }}
     
      className='content'>
      

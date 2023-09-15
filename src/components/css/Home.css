@@ -149,6 +149,12 @@ background-color: chocolate;
   display:flex;
 
 }
+.logo-showing .container .row{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+
+}
 .logo-showing .container .col-lg-3{
 
   justify-content: center;
